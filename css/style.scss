@@ -7,3 +7,156 @@
     list-style: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;700&family=Merriweather:wght@700&display=swap');
+
+$font-IBM: 'IBM Plex Sans', sans-serif;
+
+$font-merriweather: 'Merriweather', serif;
+
+body{
+    height: 100vh;
+    background-color: #eeef20;
+    & .main-area{
+        height: calc(100vh - 350px);
+    }
+    & .footer{
+        display: flex;
+        justify-content: space-between;
+        height: 350px;
+        padding: 50px 150px;
+        background-color: rgba(30, 38, 65, 1);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: 0px -5px 10px rgba(68, 68, 68, 0.4);
+        &-info{
+            display: flex;
+            flex-direction: column;
+            & p{
+                font-family: $font-merriweather;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 20px;
+                letter-spacing: 3px;
+                color: #fff;
+            }
+            & a{
+                margin-bottom: 10px;
+                font-family: $font-IBM;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 35px;
+                color: rgba(255, 255, 255, .7);
+            }
+        }
+        &-resources{
+            display: flex;
+            flex-direction: column;
+            & p{
+                font-family: $font-merriweather;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 20px;
+                letter-spacing: 3px;
+                color: #fff;
+            }
+            & a{
+                margin-bottom: 10px;
+                font-family: $font-IBM;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 35px;
+                color: rgba(255, 255, 255, .7);
+            }
+        }
+        &-company{
+            display: flex;
+            flex-direction: column;
+            & p{
+                font-family: $font-merriweather;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 20px;
+                letter-spacing: 3px;
+                color: #fff;
+            }
+            & a{
+                margin-bottom: 10px;
+                font-family: $font-IBM;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 35px;
+                color: rgba(255, 255, 255, .7);
+            }
+        }
+        &-subscribe{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            & .subscribe{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 40px;
+                &-title{
+                    font-family: $font-IBM;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 35px;
+                    color: #fff;
+                    margin-bottom: 15px;
+                }
+                & .e-mail{
+                    display: flex;
+                    &-input{
+                        height: 51px;
+                        min-width: 224px;
+                        font-family: $font-IBM;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 16px;
+                        background-color:rgba(30, 38, 65, 1);
+                        border: 2px solid rgba(58, 69, 106, 1);
+                        padding: 15px 20px;
+                        border-radius: 5px;
+                        color: #fff;
+                        margin-right: 10px;
+                        user-select: auto;
+                    }
+                    &-button{
+                        height: 51px;
+                        min-width: 131px;
+                        font-family: $font-IBM;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: rgba(241, 242, 252, 1);
+                        color: rgba(30, 38, 65, 1);
+                        cursor: pointer;
+                    }
+                }
+            }
+            & .follow-us{
+                &-title{
+                    font-family: $font-IBM;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 35px;
+                    color: #fff;
+                    margin-bottom: 10px;
+                }
+                & .social-media{
+                    display: flex;
+                    & a{
+                        height: 46px;
+                        width: 46px;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
